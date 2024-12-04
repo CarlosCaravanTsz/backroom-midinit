@@ -2,7 +2,13 @@
 export default {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'heading': "'Oswald', sans-serif",
+        'subheading': "'Parisienne', cursive",
+        'body': "'Poppins', sans-serif",
+      },
+    },
   },
   plugins: [],
 };
