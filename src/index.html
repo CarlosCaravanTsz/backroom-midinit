@@ -7,20 +7,114 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9a523f0c33.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </head>
-<body class="bg-black text-white font-body">
-    <nav class="p-4">
-    <div class="container mx-auto flex justify-between">
-        <a href="#" class="border-t-2 border-b-2 border-yellow-600 p-2 font-heading text-sm">
+<body class="text-white bg-black font-body">
+    <nav class="sticky top-0 p-4 bg-black">
+    <div class="container flex items-center justify-between mx-auto">
+        <a href="#home" class="p-2 text-sm border-t-2 border-b-2 border-yellow-600 font-heading">
             THE BACKROOM
         </a>
-        <ul class="flex gap-12">
-            <li class=""><a href="#">Home</a></li>
-            <li class=""><a href="#">Deals</a></li>
-            <li class=""><a href="#">Contact</a></li>
+        <div class="block text-4xl sm:hidden">
+            <span id="open-mobile-menu"><i class="fa-solid fa-bars"></i></span>
+            <span id="close-mobile-menu" class="hidden"><i class="fa-solid fa-x"></i></span>
+        </div>
+        <ul class="hidden gap-12 sm:flex">
+            <li class=""><a class="hover:underline" href="#home">Home</a></li>
+            <li class=""><a class="hover:underline" href="#deals">Deals</a></li>
+            <li class=""><a class="hover:underline" href="#contact">Contact</a></li>
         </ul>
     </div>
+    <div class="sm:hidden">
+        <ul id="mobile-menu" class="flex-col hidden gap-8 p-6 text-2xl text-center">
+            <li class=""><a class="hover:underline" href="#home">Home</a></li>
+            <li class=""><a class="hover:underline" href="#deals">Deals</a></li>
+            <li class=""><a class="hover:underline" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    
     </nav>
+    <header id="home" class="flex flex-col items-center justify-center min-h-[calc(100vh-72px)] bg-center bg-no-repeat bg-cover bg-yellow-950 bg-blend-overlay" style="background-image: url('./assets/bg.png')">
+        <h1 class="p-5 text-5xl border-t-4 border-b-4 border-yellow-600 md:text-8xl sm:text-7xl font-heading">
+            THE BACKROOM
+        </h1>
+        <h2 class="mt-6 text-4xl font-subheading" >
+            Behind Closed Doors, Cocktails Await
+        </h2>
+        <button class="px-4 py-3 mt-6 tracking-wide uppercase bg-black border-2 hover:bg-yellow-950 border-yellow-950 ">
+            View our menu
+        </button>
+    </header>
+    <div class="px-5 py-10 bg-gradient-to-br from-black via-slate-950 to-red-950">
+        <div class="container flex flex-col-reverse items-center gap-4 mx-auto md:flex-row ">
+            <div>
+                <img  src="./assets/negroni_2.png" class="size-full rounded-xl md:min-w-[400px]"/>
+            </div>
+            <div id="deals" class="py-4">
+                <h1 class="text-5xl text-center subheading">Two for tuesdays</h1>
+                <h2 class="text-3xl text-center font-subheading">Buy one get one free, every Tuesday</h2>
+                <p class="text-xl font-light text-center text-yellow-50 pt-14">Why settle for one when you can have two? Join us for an unforgettable evening where luxury meets the craft of cocktail making. Each drink is a masterpiece, created with premium spiris, fresh ingredients, and the imagination of our master mixologists. It's not just a drink; it's an experience.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container grid grid-cols-1 gap-4 px-5 py-10 mx-auto lg:gap-20 lg:grid-cols-2">
+        <!-- START COKCTAIL ITEM 1-->
+        <div class="flex flex-col-reverse items-center gap-4 sm:flex-row">
+            <div>
+                <img src="./assets/cosmopolitan.png" alt="Cosmopolitan cocktail image" class="size-full min-w-60">
+            </div>
+            <div class="">
+                <h1 class="text-3xl font-heading">Cosmopolitan</h1>
+                <h2 class="text-2xl font-subheading">Sip on sophistication</h2>
+                <p class="text-xl font-light text-yellow-50">Our Cosmopolitan is a perfect blend of classic and modern, with a twist of a modern twist. It's a cocktail that's both classic and modern, with a modern twist. It's a cocktail that's both classic and modern, with a modern twist.</p>
+            </div>
+        </div>
+        <!-- END COKCTAIL ITEM 1-->
+        <!-- START COKCTAIL ITEM 2-->
+        <div class="flex flex-col items-center gap-4 sm:flex-row">
+            <div class="text-right">
+                <h1 class="text-3xl font-heading">Cosmopolitan</h1>
+                <h2 class="text-2xl font-subheading">Sip on sophistication</h2>
+                <p class="text-xl font-light text-yellow-50">Our Cosmopolitan is a perfect blend of classic and modern, with a twist of a modern twist. It's a cocktail that's both classic and modern, with a modern twist. It's a cocktail that's both classic and modern, with a modern twist.</p>
+            </div>
+            <div>
+            <img src="./assets/daiquiri.png" alt="Daquiri cocktail image" class="size-full min-w-60">
+            </div>
+        </div>
+        <!-- END COKCTAIL ITEM 3-->
+        <div class="flex flex-col-reverse items-center gap-4 sm:flex-row">
+            <div>
+                <img src="./assets/gimlet.png" alt="Cosmopolitan cocktail image" class="size-full min-w-60">
+            </div>
+            <div class="">
+                <h1 class="text-3xl font-heading">Cosmopolitan</h1>
+                <h2 class="text-2xl font-subheading">Sip on sophistication</h2>
+                <p class="text-xl font-light text-yellow-50">Our Cosmopolitan is a perfect blend of classic and modern, with a twist of a modern twist. It's a cocktail that's both classic and modern, with a modern twist. It's a cocktail that's both classic and modern, with a modern twist.</p>
+            </div>
+        </div>
+        <!-- END COKCTAIL ITEM 3-->
+        <!-- START COKCTAIL ITEM 4 -->
+        <div class="flex flex-col items-center gap-4 sm:flex-row">
+            <div class="text-right">
+                <h1 class="text-3xl font-heading">Cosmopolitan</h1>
+                <h2 class="text-2xl font-subheading">Sip on sophistication</h2>
+                <p class="text-xl font-light text-yellow-50">Our Cosmopolitan is a perfect blend of classic and modern, with a twist of a modern twist. It's a cocktail that's both classic and modern, with a modern twist. It's a cocktail that's both classic and modern, with a modern twist.</p>
+            </div>
+            <div>
+            <img src="./assets/manhattan.png" alt="Daquiri cocktail image" class="size-full min-w-60">
+            </div>
+        </div>
+        <!-- END COKCTAIL ITEM 4-->
+    </div>
+    <footer id="contact" class="p-20 border-t border-yellow-950">
+        <ul class="flex justify-center gap-20 text-4xl ">
+            <a href="https://youtube.com" target="_blank" class="hover:text-red-600" ><li><i class="fa-brands fa-youtube"></i></li></a>
+            <a href="https://facebook.com" target="_blank" class="hover:text-blue-600"><li><i class="fa-brands fa-facebook"></i></li></a>
+            <a href="https://instagram.com" target="_blank" class="hover:text-pink-600"><li><i class="fa-brands fa-instagram"></i></li></a>
+            
+        </ul>
+    </footer>
 
 </body>
 </html>
